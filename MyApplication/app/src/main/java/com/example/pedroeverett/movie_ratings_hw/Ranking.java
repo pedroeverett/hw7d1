@@ -1,9 +1,9 @@
 package com.example.pedroeverett.movie_ratings_hw;
 
 
-///**
-//* Created by pedroeverett on 03/07/2017.
-// **/
+/**
+ * Created by pedroeverett on 03/07/2017.
+ **/
 
 import java.util.Arrays;
 
@@ -50,17 +50,16 @@ public class Ranking {
 
     public String getMovie(int index) {
         return list[index - 1].getTitle();
-
     }
 
     public void setMovie(String title, String genre, int currentRanking) {
         list[currentRanking - 1] = new Movie(title, genre, currentRanking);
     }
 
-    public String getMovieByID(){
+    public String getMovieByName(String name){
         for (Movie movie : list){
-            if (movie.getTitle() == "Red");
-            return movie.getTitle();
+            if (movie.getTitle() == name){
+            return movie.getTitle(); }
         }
         return null;
     }

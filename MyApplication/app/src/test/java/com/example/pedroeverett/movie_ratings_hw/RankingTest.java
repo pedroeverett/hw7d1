@@ -43,7 +43,7 @@ public class RankingTest {
     }
 
     @Test
-    public void checkGetMovieById() {
-        assertEquals("Red", ranking.getMovieByID());
+    public void checkGetMovieByTitle() {
+        assertEquals("Red", ranking.getMovieByName("Red"));
     }
 }
